@@ -3,7 +3,16 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&display=swap');
 
-
+:root{
+    --green1: #6EA96D;
+    --green2: #3A8638;
+    --green3: #0D5F0C;
+    --red1: #E16665;
+    --red2: #C23231;
+    --red3: #931413;
+    --yellow: #EEE621;
+    --light: #fff;
+}
 
 /* ALL */
 body{
@@ -12,25 +21,27 @@ body{
 }
 
 /* SEARCH BAR & LOGO*/
-.logo{
+.wrap .logo{
     width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: gray;
     margin: 0 1rem 1rem 0;
+}
+
+.wrap img{
+    width: 100%;
+    border-radius: 50%;
+    
   }
   
-  /* SEARCH BOX */
   .searchTerm {
-    border: 3px solid #00B4CC;
+    border: 3px solid var(--green2);
     padding: 5px;
     height: 1.5rem;
     border-radius: 5px;
-    color: #9DBFAF;
+    color: var(--green1);
     width: 15rem;
   }
   .searchTerm:focus{
-    color: #00B4CC;
+    color: var(--green2);
   }
   
   .search {
@@ -45,37 +56,41 @@ body{
     align-items: center;
     flex-wrap: wrap;
     flex-flow: row;
-    height: 8rem;
+
   }
 
 /* NAVIGATION */
+nav{
+    background: var(--green2);
+    color: var(--light);
+}
 button{
-	color: black;
+	color: var(--light);
 	text-decoration: none;
 	padding: 1rem;
 	margin: 0 .25rem;
 	font-size: 1.25rem;
-  border: none;
-  border-bottom: 0.25rem solid white;
-  background: transparent;
+    border: none;
+    border-bottom: 0.25rem solid var(--green2);
+    background: transparent;
 	justify-content: center;
 	align-items: center;
 }
 
 .filters button:link{
-	border-bottom: 0.25rem solid black;
+	border-bottom: 0.25rem solid var(--light);
 }
 
 .filters button:focus {
-	border-bottom: 0.25rem solid black;
+	border-bottom: 0.25rem solid var(--light);
 }
 
 .filters button:hover {
-	border-bottom: 0.25rem solid black;
+	border-bottom: 0.25rem solid var(--light);
 }
 
 .filters button:active {
-	background: gray;
+background: var(--green1);
   border-radius: 5px;
 }
 .filters{
@@ -83,6 +98,8 @@ button{
   justify-content: center;
   align-content: center;
   flex-wrap:wrap;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 /* BUSINESSES LIST */
@@ -90,7 +107,7 @@ button{
   margin: 1rem;
   padding: 0 1.25rem 1.25rem 1.75rem;
   border-radius: 15px;
-  border: 3px solid black;
+  border: 3px solid var(--red2);
   background: white;
 }
 section{

@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
       <!-- favicon -->
-      <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-      <link rel="manifest" href="images/favicon/site.webmanifest">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+
+
     
      <!-- CSS stylesheet -->
-     <link rel="stylesheet" href="CSS/styles.css">
+     <link rel="stylesheet" href="CSS/stylesheet.css">
      <!-- IBM Font	 -->
      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&display=swap'" rel="stylesheet">
      <!-- Normalize	 -->
@@ -25,9 +30,10 @@
         <!-- SEARCH BAR -->
         <div class="wrap">
             <div class="logo">
+                <img src="images/CMC Logo.jpg" alt="">
             </div>
              <div class="search">
-                <input type="text" class="searchTerm" placeholder="search">
+                <input type="text" class="searchTerm" placeholder="Search Businesses">
           <!-- <button type="submit" class="searchButton"> -->
                   <i class="fa fa-search"></i>
                </button>
@@ -38,6 +44,10 @@
     <main>
         <!-- NAVIGATION -->
 <nav class="filters">
+    <button data-filter="*">All</button>
+    <button data-filter=".service">Services</button>
+    <button data-filter=".product">Products</button>
+    <p>|</p>
     <button data-filter=".art">Art</button>
     <button data-filter=".athletics">Athletics</button>
     <button data-filter=".cannabis">Cannabis</button>
@@ -46,7 +56,6 @@
     <button data-filter=".media">Media & Entertainment</button>
     <button data-filter=".person">Personal Care</button>
     <button data-filter=".real">Real Estate & Finance</button>
-    <button data-filter="*">All</button>
   </nav>  
   
   <!-- BUSINESSES LIST-->
