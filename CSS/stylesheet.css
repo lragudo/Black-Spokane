@@ -1,0 +1,116 @@
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&display=swap');
+
+
+
+/* ALL */
+body{
+    font-family: "IBM Plex Sans", sans-serif;
+    margin:3rem 2rem;
+}
+
+/* SEARCH BAR & LOGO*/
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: gray;
+    margin: 0 1rem 1rem 0;
+  }
+  
+  /* SEARCH BOX */
+  .searchTerm {
+    border: 3px solid #00B4CC;
+    padding: 5px;
+    height: 1.5rem;
+    border-radius: 5px;
+    color: #9DBFAF;
+    width: 15rem;
+  }
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .wrap{
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-flow: row;
+    height: 8rem;
+  }
+
+/* NAVIGATION */
+button{
+	color: black;
+	text-decoration: none;
+	padding: 1rem;
+	margin: 0 .25rem;
+	font-size: 1.25rem;
+  border: none;
+  border-bottom: 0.25rem solid white;
+  background: transparent;
+	justify-content: center;
+	align-items: center;
+}
+
+.filters button:link{
+	border-bottom: 0.25rem solid black;
+}
+
+.filters button:focus {
+	border-bottom: 0.25rem solid black;
+}
+
+.filters button:hover {
+	border-bottom: 0.25rem solid black;
+}
+
+.filters button:active {
+	background: gray;
+  border-radius: 5px;
+}
+.filters{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap:wrap;
+}
+
+/* BUSINESSES LIST */
+.content{ 
+  margin: 1rem;
+  padding: 0 1.25rem 1.25rem 1.75rem;
+  border-radius: 15px;
+  border: 3px solid black;
+  background: white;
+}
+section{
+    flex-wrap: wrap;
+    margin-left: 2.5rem;
+  /*   outline: 2px dotted black; */
+  }
+
+.label{
+  font-weight: 600;
+}
+tr{
+  line-height: 1.5em;
+}
+td{
+  padding-right: .75rem;
+};
+h2{
+  margin-top: 0;
+}
+
+
+
