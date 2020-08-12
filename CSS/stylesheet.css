@@ -4,20 +4,21 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&display=swap');
 
 :root{
-    --green1: #6EA96D;
+    --green1: #94CB93;
     --green2: #3A8638;
     --green3: #0D5F0C;
     --red1: #F2A6A6;
     --red2: #C23231;
     --red3: #931413;
-    --yellow: #EEE621;
+    --yellow: #F2E518;
+    --yellow1: #FFFB8C;
     --light: #fff;
+    --dark: #000000;
 }
 
 /* ALL */
 body{
     font-family: "IBM Plex Sans", sans-serif;
-    margin:3rem 2rem;
 }
 a{
     color: var(--red2);
@@ -62,63 +63,70 @@ a{
   }
 .link a{
     text-decoration: none;
+    color: var(--green2);
 }
 .link{
-    border: 3px solid var(--red2);
+    border: 3px solid var(--green2);
     border-radius: 5px;
     padding: .75rem;
 }
 .link:link{
-    background: var(--red1);
+    background: var(--green1);
     color: black;
 }
 
 .link:focus {
-    background: var(--red1);
+    background: var(--green1);
 }
 
 .link:hover{
-    background: var(--red1);
+    background: var(--green1);
     color: black;
 }
 
 .link:active {
-    background: var(--red1);
+    background: var(--green1);
 }
 
 
 /* NAVIGATION */
 nav{
-    background: var(--green2);
-    color: var(--light);
+    background: var(--yellow);
+    color: var(--dark);
+    padding: 1rem 0;
+    font-size: 1rem;
+  font-weight: 700;
+}
+p{
+  margin: 0 .25rem;
+  padding: .5rem;
 }
 button{
-	color: var(--light);
+	color: var(--dark);
 	text-decoration: none;
-	padding: 1rem;
+	padding: .5rem;
 	margin: 0 .25rem;
-	font-size: 1.25rem;
-    border: none;
-    border-bottom: 0.25rem solid var(--green2);
-    background: transparent;
+  border: none;
+  border-bottom: 0.25rem solid var(--yellow);
+  background: transparent;
 	justify-content: center;
 	align-items: center;
 }
 
 .filters button:link{
-	border-bottom: 0.25rem solid var(--light);
+	border-bottom: 0.25rem solid var(--dark);
 }
 
 .filters button:focus {
-	border-bottom: 0.25rem solid var(--light);
+	border-bottom: 0.25rem solid var(--dark);
 }
 
 .filters button:hover {
-	border-bottom: 0.25rem solid var(--light);
+	border-bottom: 0.25rem solid var(--dark);
 }
 
 .filters button:active {
-background: var(--green1);
+background: var(--yellow1);
   border-radius: 5px;
 }
 .filters{
@@ -138,10 +146,11 @@ background: var(--green1);
   border: 3px solid var(--red2);
   background: white;
 }
+.container{
+  margin: 2rem 3rem;;
+}
 section{
     flex-wrap: wrap;
-    margin-left: 2.5rem;
-  /*   outline: 2px dotted black; */
   }
 
 .label{
