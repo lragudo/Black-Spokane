@@ -4,8 +4,12 @@
 */ 
 const iso = new Isotope( '.filter-container', {
     itemSelector: '.content',
-    layoutMode: 'fitRows'
+    layoutMode: 'fitRows',
+    getSortData: {
+      name: '.name'},
+    sortBy: 'name',
   });
+
   
   /* 
   - CLICK BUTTON, FILTER CONTENT
