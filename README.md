@@ -1,7 +1,10 @@
 # Black Spokane
 
-## List of Businesses for Carley Maxey Center
+## Original List of Businesses
 https://docs.google.com/document/d/1vNn_ldZdSJVf9SN1jPVEmlHrBWl3E76AQSKQcXoXKH0/edit?usp=sharing
+
+## Google Spread Sheet of Businesses
+https://docs.google.com/spreadsheets/d/1sKzWz6w2B7yrGCsbREvGV3NRKsM8g0Ba9Z4sjVHTs0k/edit?usp=sharing
 
 ## GitHub Repository
 https://github.com/lragudo/Black-Spokane 
@@ -18,3 +21,5 @@ https://github.com/lragudo/Black-Spokane
     * I think this works better for the businesses in the list. I will check with brianna but this is an easy change.
  
 
+## Adding
+* detailed instructions for adding new businesses is in the businessCardTemplate.html file

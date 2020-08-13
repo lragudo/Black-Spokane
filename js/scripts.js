@@ -4,7 +4,7 @@
 */ 
 const iso = new Isotope( '.filter-container', {
     itemSelector: '.content',
-    layoutMode: 'fitRows',
+    layoutMode: 'masonry',
     getSortData: {
       name: '.name'},
     sortBy: 'name',

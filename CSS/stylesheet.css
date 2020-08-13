@@ -86,6 +86,7 @@ a:active {
     border: 3px solid var(--green2);
     border-radius: 5px;
     padding: .75rem;
+    margin-left: .75rem;
 }
 .link:link{
     background: var(--green1);
@@ -172,7 +173,7 @@ background: var(--yellow1);
   max-width: 18rem;
 }
 .container{
-  margin: 2rem 3rem;;
+  margin: 2rem 3rem 2rem 5rem;
 }
 .content p{
   padding: 0 0 .5rem 0;
