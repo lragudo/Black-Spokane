@@ -111,8 +111,15 @@ nav{
   background: var(--yellow);
   color: var(--dark);
   padding: 1rem 0;
-  font-size: .75rem;
-  font-weight: 700;
+}
+
+.filters{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap:wrap;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 p{
   margin: 0 .25rem;
@@ -146,14 +153,7 @@ button{
 background: var(--yellow1);
   border-radius: 5px;
 }
-.filters{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap:wrap;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
+
 
 /* BUSINESSES LIST */
 .content h2{
@@ -196,4 +196,17 @@ td{
 
 
 
+/* MEDIA QUERIES */
 
+/* mobile screens */
+@media screen and (max-width: 500px) {
+	.filters{
+    font-size: 1rem;
+  }
+  .content{
+    padding: 0 .5rem .5rem .5rem;
+  }
+  .container{
+    font-size: .75rem;
+  }
+}
