@@ -21,7 +21,24 @@ body{
     font-family: "IBM Plex Sans", sans-serif;
 }
 a{
-    color: var(--red2);
+    color: var(--red3);
+    text-decoration: none;
+    padding: 0 .25rem;
+    border-radius: 2px;
+}
+
+a:focus {
+  text-decoration: underline;
+}
+
+a:hover{
+  color: var(--red1);
+  padding: 0 .25rem;
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
 /* SEARCH BAR & LOGO*/
 .wrap .logo{
@@ -91,10 +108,10 @@ a{
 
 /* NAVIGATION */
 nav{
-    background: var(--yellow);
-    color: var(--dark);
-    padding: 1rem 0;
-    font-size: 1rem;
+  background: var(--yellow);
+  color: var(--dark);
+  padding: 1rem 0;
+  font-size: .75rem;
   font-weight: 700;
 }
 p{
@@ -139,18 +156,31 @@ background: var(--yellow1);
 }
 
 /* BUSINESSES LIST */
+.content h2{
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0;
+  font-family: "IBM Plex Sans";
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 .content{ 
   margin: 1rem;
   padding: 0 1.25rem 1.25rem 1.75rem;
   border-radius: 15px;
   border: 3px solid var(--red2);
   background: white;
+  max-width: 25rem;
 }
 .container{
   margin: 2rem 3rem;;
 }
+.content p{
+  padding: 0 0 .5rem 0;
+  margin: 0;
+}
 section{
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   }
 
 .label{
@@ -158,13 +188,12 @@ section{
 }
 tr{
   line-height: 1.5em;
+  display: flex;
 }
 td{
   padding-right: .75rem;
 };
-h2{
-  margin-top: 0;
-}
+
 
 
 
