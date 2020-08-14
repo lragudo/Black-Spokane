@@ -9,6 +9,8 @@ https://docs.google.com/spreadsheets/d/1sKzWz6w2B7yrGCsbREvGV3NRKsM8g0Ba9Z4sjVHT
 ## GitHub Repository
 https://github.com/lragudo/Black-Spokane 
 
+## Codepen Collection
+* https://codepen.io/collection/XWYzVg
 
 ## Website needs
 * search bar
