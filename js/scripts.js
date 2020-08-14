@@ -33,10 +33,9 @@ const iso = new Isotope( '.filter-container', {
   
 
   // SEARCH BAR
-    var instance = new Mark(document.querySelector(".content"));
-    // const search = document.querySelector('.search');
-    // search.addEventListener('click') 
-    // let input = document.getElementsByClassName('myInput').value;
-    instance.mark("Clear");
-    
-  
+    var instance = new Mark(document.querySelector(".container"));
+    const trigger = document.querySelector('.searchButton');
+    trigger.addEventListener( 'click' , () => {
+      let input = document.querySelector('.searchTerm').value;
+      instance.mark(input);
+    });

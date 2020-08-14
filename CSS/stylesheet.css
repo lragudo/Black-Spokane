@@ -20,6 +20,11 @@
 body{
     font-family: "IBM Plex Sans", sans-serif;
 }
+mark{
+  background: var(--yellow1);
+  padding: 0 .1rem;
+  border-radius: 5px;
+}
 
 a{
     color: var(--red3);
@@ -41,7 +46,8 @@ a:hover{
 a:active {
   text-decoration: underline;
 }
-/* SEARCH BAR & LOGO*/
+/* SEARCH BAR & LOGO & PRINT*/
+ /* logo */
 .wrap .logo{
     width: 100px;
     margin: 0 1rem 1rem 0;
@@ -53,6 +59,7 @@ a:active {
     
   }
   
+  /* search bar */
   .searchTerm {
     border: 3px solid var(--green2);
     padding: 5px;
@@ -71,6 +78,7 @@ a:active {
     display: flex;
   }
   
+  /* search bar + logo */
   .wrap{
     display: flex;
     margin: 1rem;
@@ -79,32 +87,37 @@ a:active {
     flex-flow: row;
 
   }
+
+/* buttons */
 .link a{
     text-decoration: none;
-    color: var(--green2);
+    color: var(--green3);
 }
-.link{
+.searchButton, .link{
     border: 3px solid var(--green2);
     border-radius: 5px;
-    padding: .75rem;
+    padding: .5rem;
     margin-left: .75rem;
+    color: var(--green3);
 }
-.link:link{
+.searchButton:link, .link:link{
     background: var(--green1);
-    color: black;
-}
-
-.link:focus {
-    background: var(--green1);
+    color: var(--green3);
 }
 
-.link:hover{
+.searchButton:focus, .link:focus {
     background: var(--green1);
-    color: black;
+    color: var(--green3);
 }
 
-.link:active {
+.searchButton:hover, .link:hover{
     background: var(--green1);
+    color: var(--green3);
+}
+
+.searchButton:active, .link:active {
+    background: var(--green1);
+    color: var(--green3);
 }
 
 
