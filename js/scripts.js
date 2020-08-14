@@ -32,25 +32,52 @@ const iso = new Isotope( '.filter-container', {
   });
   
 
-  // SEARCH BAR
-    var instance = new Mark(document.querySelector(".container"));
-    const trigger = document.querySelector('.searchButton');
-    const trigger2 = document.querySelector('.searchTerm');
-    const trigger3 = document.querySelector('.container');
-    // mark search terms when pressing search button
-    trigger.addEventListener( 'click' , () => {
-      let input = document.querySelector('.searchTerm').value;
-      instance.mark(input);
-    });
-    // mark search terms when pressing enter
-    trigger2.addEventListener('keypress', function (e) {
-      if (e.key === 'Enter') {
-        let input = document.querySelector('.searchTerm').value;
-        instance.mark(input);
-      }
-    });
-    // unmark search when click on the page
-    trigger3.addEventListener( 'click' , () => {
-      let input = document.querySelector('.searchTerm').value;
-      instance.unmark(input);
-    });
+// SEARCH BAR
+// initilize mark
+var instance = new Mark(document.querySelector(".container"));
+// triggers for highlight
+const trigger = document.querySelector('.searchButton');
+const trigger2 = document.querySelector('.searchTerm');
+const trigger3 = document.querySelector('.container');
+
+
+// mark search terms when pressing search button
+trigger.addEventListener( 'click' , () => {
+  let input = document.querySelector('.searchTerm').value;
+  // adds class result
+  var options = {'className': 'result'};
+  instance.mark(input, options);
+
+  // scroll to result
+  let elem = document.querySelector('.result');
+  let rect = elem.getBoundingClientRect();
+  window.scrollTo({
+    top: rect.top - 150,
+    behavior: 'smooth'
+  });
+
+});
+
+// mark search terms when pressing enter
+trigger2.addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    let input = document.querySelector('.searchTerm').value;
+    instance.mark(input);
+    // scroll to result
+    var elmnt = document.getElementsByClassName("result");
+    elmnt.scrollIntoView(); 
+  }
+});
+
+// unmark search when click on the page
+trigger3.addEventListener( 'click' , () => {
+  let input = document.querySelector('.searchTerm').value;
+  instance.unmark(input);
+
+
+});
+
+
+
+
+

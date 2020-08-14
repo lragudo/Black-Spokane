@@ -79,6 +79,24 @@ a:active {
     position: relative;
     display: flex;
   }
+
+  /* search notifications */
+  .highlighted {
+    position: relative;
+    top: 43px;
+    left: -313px;
+    font-size: 0.75rem;
+    height: .9rem;
+    
+    color: var(--light);
+  }
+  .highlighted mark{
+    background: var(--green1);
+    color: var(--dark);
+    padding: 0 .5rem;
+  }
+
+ 
   
   /* search bar + logo */
   .wrap{
@@ -98,28 +116,33 @@ a:active {
 .searchButton, .link{
     border: 3px solid var(--green2);
     border-radius: 5px;
-    padding: .5rem;
+    padding: 0 .25rem;
     margin-left: .75rem;
-    color: var(--green3);
+    color: var(--green2);
+}
+.link{
+  padding: .25rem;
+  margin-left: 0;
+  display: flex;
 }
 .searchButton:link, .link:link{
     background: var(--green1);
-    color: var(--green3);
+    color: var(--green2);
 }
 
 .searchButton:focus, .link:focus {
     background: var(--green1);
-    color: var(--green3);
+    color: var(--green2);
 }
 
 .searchButton:hover, .link:hover{
     background: var(--green1);
-    color: var(--green3);
+    color: var(--green2);
 }
 
 .searchButton:active, .link:active {
     background: var(--green1);
-    color: var(--green3);
+    color: var(--green2);
 }
 
 
