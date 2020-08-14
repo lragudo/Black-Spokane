@@ -27,7 +27,7 @@ mark{
 }
 
 a{
-    color: var(--red3);
+    color: var(--red2);
     text-decoration: none;
     padding: 0 .25rem;
     border-radius: 2px;
@@ -123,8 +123,8 @@ a:active {
 
 /* NAVIGATION */
 nav{
-  background: var(--yellow);
-  color: var(--dark);
+  background: var(--red2);
+  color: var(--light);
   padding: 1rem 0;
 }
 .filters{
@@ -140,7 +140,7 @@ p{
   padding: .5rem;
 }
 button{
-	color: var(--dark);
+	color: var(--light);
 	text-decoration: none;
 	padding: .5rem;
 	margin: 0 .25rem;
@@ -149,23 +149,23 @@ button{
 	justify-content: center;
   align-items: center;
   border-radius: 5px;
+  border-bottom: 3px solid var(--red2);
 }
 
 .filters button:link{
-	background: var(--yellow1);
+  border-bottom: 3px solid var(--red1);
 }
 
 .filters button:focus {
-	background: var(--yellow1);
+  border-bottom: 3px solid var(--red1);
 }
 
 .filters button:hover {
-	background: var(--yellow1);
+  border-bottom: 3px solid var(--red1);
 }
 
 .filters button:active {
-background: var(--yellow1);
-  border-radius: 5px;
+  border-bottom: 3px solid var(--red1);
 }
 
 
@@ -177,13 +177,14 @@ background: var(--yellow1);
   font-family: "IBM Plex Sans";
   font-size: 1.5rem;
   font-weight: 500;
+  color: var(--red2);
 }
 .content{ 
   margin: 1rem;
   padding: 0 1.25rem 1.25rem 1.75rem;
   border-radius: 15px;
   border: 3px solid var(--red2);
-  background: white;
+  /* background: var(--red1); */
   max-width: 18rem;
 }
 .container{
@@ -203,7 +204,7 @@ section{
 tr{
   line-height: 1.5em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 td{
   padding-right: .75rem;
