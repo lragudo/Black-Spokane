@@ -54,7 +54,12 @@ a:active {
     width: 100px;
     margin: 0 1rem 1rem 0;
 }
-
+header{
+  background: var(--green1);
+  margin: 0;
+  padding: 1rem;
+  padding-bottom: 0;
+}
 .wrap img{
     width: 100%;
     border-radius: 50%;
@@ -78,77 +83,58 @@ a:active {
     width: 100%;
     position: relative;
     display: flex;
-  }
-
-  /* search notifications */
-  .highlighted {
-    position: relative;
-    top: 43px;
-    left: -313px;
-    font-size: 0.75rem;
-    height: .9rem;
-    
-    color: var(--light);
-  }
-  .highlighted mark{
-    background: var(--green1);
-    color: var(--dark);
-    padding: 0 .5rem;
-  }
-
- 
+  } 
   
   /* search bar + logo */
   .wrap{
     display: flex;
-    margin: 1rem;
+    margin: 0 1rem;
     align-items: center;
     flex-wrap: wrap;
     flex-flow: row;
-
   }
 
 /* buttons */
 .link a{
     text-decoration: none;
-    color: var(--green3);
 }
-.searchButton, .link{
+.searchButton, .link a{
     border: 3px solid var(--green2);
     border-radius: 5px;
     padding: 0 .25rem;
     margin-left: .75rem;
     color: var(--green2);
+    background: var(--light);
 }
-.link{
+.link a{
   padding: .25rem;
   margin-left: 0;
   display: flex;
 }
-.searchButton:link, .link:link{
-    background: var(--green1);
-    color: var(--green2);
+.searchButton:link, .link a:link{
+    background: var(--green2);
+    color: var(---light);
 }
 
-.searchButton:focus, .link:focus {
-    background: var(--green1);
-    color: var(--green2);
+.searchButton:focus, .link a:focus{
+    background: var(--green2);
+    color: var(--light);
 }
 
-.searchButton:hover, .link:hover{
-    background: var(--green1);
-    color: var(--green2);
+.searchButton:hover, .link a:hover{
+    background: var(--green2);
+    color: var(--light);
 }
 
-.searchButton:active, .link:active {
-    background: var(--green1);
-    color: var(--green2);
+.searchButton:active, .link a:active{
+    background: var(--green2);
+    color: var(--light);
 }
 
 
 /* NAVIGATION */
 nav{
-  background: var(--red2);
+  background: var(--green2);
   color: var(--light);
   padding: 1rem 0;
 }
@@ -174,23 +160,27 @@ button{
 	justify-content: center;
   align-items: center;
   border-radius: 5px;
-  border-bottom: 3px solid var(--red2);
+  /* border-bottom: 3px solid var(--green2); */
 }
 
 .filters button:link{
-  border-bottom: 3px solid var(--red1);
+  background: var(--light);
+  color: var(--green2);
 }
 
 .filters button:focus {
-  border-bottom: 3px solid var(--red1);
+  background: var(--light);
+  color: var(--green2);
 }
 
 .filters button:hover {
-  border-bottom: 3px solid var(--red1);
-}
+  background: var(--light);
+  color: var(--green2);
+} 
 
 .filters button:active {
-  border-bottom: 3px solid var(--red1);
+  background: var(--light);
+  color: var(--green2);
 }
 
 
@@ -208,7 +198,7 @@ button{
   margin: 1rem;
   padding: 0 1.25rem 1.25rem 1.75rem;
   border-radius: 15px;
-  border: 3px solid var(--red2);
+  border: 3px solid var(--red1);
   /* background: var(--red1); */
   max-width: 18rem;
 }
