@@ -20,8 +20,10 @@
 body{
     font-family: "IBM Plex Sans", sans-serif;
 }
+
+/* search highlight */
 mark{
-  background: var(--yellow1);
+  background: var(--red1);
   padding: 0 .1rem;
   border-radius: 5px;
 }
@@ -177,7 +179,7 @@ button{
   font-family: "IBM Plex Sans";
   font-size: 1.5rem;
   font-weight: 500;
-  color: var(--red2);
+  color: var(--dark);
 }
 .content{ 
   margin: 1rem;

@@ -35,7 +35,22 @@ const iso = new Isotope( '.filter-container', {
   // SEARCH BAR
     var instance = new Mark(document.querySelector(".container"));
     const trigger = document.querySelector('.searchButton');
+    const trigger2 = document.querySelector('.searchTerm');
+    const trigger3 = document.querySelector('.container');
+    // mark search terms when pressing search button
     trigger.addEventListener( 'click' , () => {
       let input = document.querySelector('.searchTerm').value;
       instance.mark(input);
+    });
+    // mark search terms when pressing enter
+    trigger2.addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        let input = document.querySelector('.searchTerm').value;
+        instance.mark(input);
+      }
+    });
+    // unmark search when click on the page
+    trigger3.addEventListener( 'click' , () => {
+      let input = document.querySelector('.searchTerm').value;
+      instance.unmark(input);
     });
