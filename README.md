@@ -23,7 +23,7 @@
 * Codepen Collection
     * https://codepen.io/collection/XWYzVg
 * Google Material Design Icon
-    * Icons userd are from this free icon font
+    * Icons used are from this free icon font
     * https://material.io/resources/icons/?style=baseline
 * JS Scripts used
     * Istope by Metafizzy
