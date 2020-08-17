@@ -157,10 +157,10 @@ p{
   margin: 0 .25rem;
   padding: .5rem;
 }
-button{
+.filters button{
 	color: var(--light);
 	text-decoration: none;
-	padding: .5rem;
+	padding: .25rem;
 	margin: 0 .25rem;
   border: none;
   background: transparent;
