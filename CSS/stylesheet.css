@@ -102,7 +102,18 @@ header{
   }
 
 /* buttons */
-.link a{
+/* removes default button styling */
+button {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.link i.material-icons{
     text-decoration: none;
 }
 .searchButton, .link i.material-icons{
@@ -112,6 +123,7 @@ header{
     margin-left: .75rem;
     color: var(--green2);
     background: var(--light);
+    outline: none;
 }
 .link i.material-icons{
   padding: .25rem;
@@ -131,6 +143,9 @@ header{
 .searchButton:hover, .link i.material-icons:hover{
     background: var(--green2);
     color: var(--light);
+}
+.link a:hover{
+  text-decoration: none;
 }
 
 .searchButton:active, .link i.material-icons:active{
