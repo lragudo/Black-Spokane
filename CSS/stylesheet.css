@@ -72,34 +72,34 @@ header{
     border: 3Cpx solid var(--light);
   }
   
-  /* search bar */
-  .searchTerm {
-    /* border: 3px solid var(--green2); */
-    border: none;
-    padding: 5px;
-    height: 1.5rem;
-    border-radius: 10px;
-    color: var(--green1);
-    width: 15rem;
-  }
-  .searchTerm:focus{
-    color: var(--green2);
-  }
-  
-  .search {
-    width: 100%;
-    position: relative;
-    display: flex;
-  } 
-  
-  /* search bar + logo */
-  .wrap{
-    display: flex;
-    margin: 0 1rem;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-flow: row;
-  }
+/* search bar */
+.searchTerm {
+  /* border: 3px solid var(--green2); */
+  border: none;
+  padding: 5px;
+  height: 1.5rem;
+  border-radius: 10px;
+  color: var(--green1);
+  width: 15rem;
+}
+.searchTerm:focus{
+  color: var(--green2);
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+} 
+
+/* search bar + logo */
+.wrap{
+  display: flex;
+  margin: 0 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-flow: row;
+}
 
 /* buttons */
 /* removes default button styling */
@@ -117,7 +117,6 @@ button {
     text-decoration: none;
 }
 .searchButton, .link i.material-icons{
-    /* border: 3px solid var(--green2); */
     border-radius: 10px;
     padding: 0 .25rem;
     margin-left: .75rem;
@@ -208,6 +207,41 @@ p{
 
 
 /* BUSINESSES LIST */
+
+/* buttons list vs grid */
+button.grid, button.list{
+  background: white;
+  padding: 0;
+}
+.grid i.material-icons, .list i.material-icons{
+  border-radius: 10px;
+  padding: .25rem;
+  margin-left: .75rem;
+  color: var(--light);
+  background: var(--green2);
+  outline: none;
+}
+.grid i.material-icons:link, .list i.material-icons:link{
+  background: var(--light);
+  color: var(---green2);
+}
+
+.grid i.material-icons:focus, .list i.material-icons:focus{
+  background: var(--light);
+  color: var(--green2);
+}
+
+.grid i.material-icons:hover, .list i.material-icons:hover{
+  background: var(--light);
+  color: var(--green2);
+}
+
+.grid i.material-icons:active, .list i.material-icons:active{
+  background: var(--light);
+  color: var(--green2);
+}
+
+/* Business List */
 .content h2{
   margin: 0;
   margin-top: 1rem;
