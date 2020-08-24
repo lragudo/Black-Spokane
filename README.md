@@ -33,3 +33,8 @@
 
 ## Instructions
 * detailed instructions for adding new businesses is in the businessCardTemplate.html file
+
+
+outline
+yellow
+website title
